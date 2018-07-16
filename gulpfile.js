@@ -19,9 +19,9 @@ gulp.task('sass', function() {
 });
 
 gulp.task('default', function() {
-    gulp.watch('./scss/*.scss', ['sass'])
+    gulp.watch('./scss/*.scss', ['sass']);
+    gulp.watch('./build/*.html', ['html']);
 });
-
 
 /*
 gulp.task('scripts', function() {
@@ -39,3 +39,13 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./js'))
 });
 */
+
+const htmlPartial = require('gulp-html-partial');
+ 
+gulp.task('html', function () {
+    gulp.src(['build/*.html'])
+        .pipe(htmlPartial({
+            basePath: 'build/partials/'
+        }))
+        .pipe(gulp.dest('dist'));
+});

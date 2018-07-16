@@ -168,6 +168,9 @@ input[type=button] {
 .text-right {
   text-align: right; }
 
+body {
+  color: #000; }
+
 ::-moz-selection {
   background: #FFFF66;
   color: grey; }
