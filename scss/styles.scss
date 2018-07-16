@@ -1,0 +1,50 @@
+//// IMPORTS
+
+@import 'utilities/_reset';
+@import 'utilities/_fonts';
+@import 'utilities/_helpers';
+
+@import '_header';
+@import '_footer';
+
+//// VARIABLES
+
+    // COLORS
+
+$primary-color: #000;
+$secondary-color: #000;
+
+    // FONTS
+
+$primary-font: '';
+$secondary-font: '';
+
+//// MAIN STYLES
+
+body {
+    
+}
+
+a {
+    
+}
+
+//// SELECTION STYLES
+
+::selection {background: #FFFF66;color:grey;}
+::selection { background: #FFFF66;color:grey;}
+::-moz-selection {background: #FFFF66;color:grey;}
+::-webkit-selection {background: #FFFF66;color:grey;}
+
+//// PLACEHOLDER STYLES
+
+::-webkit-input-placeholder {color: #FFFF66;}
+:-moz-placeholder {color: #FFFF66;}
+::-moz-placeholder {color: #FFFF66;}
+:-ms-input-placeholder {color: #FFFF66;}
+
+//// MEDIA QUERIES
+
+@media (max-width:1200px) {
+    
+}
